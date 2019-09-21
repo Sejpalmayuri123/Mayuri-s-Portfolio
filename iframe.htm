@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="device=width-device,initial-scale=1.0">
+        <style>
+        body
+        {
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        img
+        {
+            height: 100%;
+            width: 100%;
+        }
+        .container
+        {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+ .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+
+
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color:black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+button
+{
+    background: transparent;
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+button a
+{
+    text-decoration: none;
+    color: black;
+    outline: none;
+    font-weight: 500;
+   
+}
+button:hover
+{
+    background: black;
+    color: white;
+}
+button a:hover
+{
+    color: white;
+}
+h1
+{
+    margin-bottom: 5px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <img src="images/mainn.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text"><h1>SCHOLASTIC.COM</h1></div>
+                  <a href=" https://sejpalmayuri123.github.io/website-for-learner/" target="_blank"><button>VIEW PROJECT</button></a>
+                </div>
+              </div>
+    </body>
+</html>
